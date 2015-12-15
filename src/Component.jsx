@@ -5,13 +5,14 @@ export default class Converter extends React.Component {
 		return (
 			<div className="convert">
 			<h1>Unit Converter</h1>
-				<Range />
+				<Mass />
+				<Length />
 			</div>
 		);
 	}
 }
 
-class Range extends React.Component {
+class Mass extends React.Component {
 
 constructor(props) {
     super(props);
@@ -32,11 +33,42 @@ var newKg = (e.target.value / 2.2046).toFixed(5);
 render() {
 
   return (
-        <div>
+        <div className="mass-div">
             <label> Kg: </label>
-            <input type="number" name="Kg" onChange={this.kgClick.bind(this)} value={this.state.kg} />
+            <input type="number" name="Kg" className="input" id="red" onChange={this.kgClick.bind(this)} value={this.state.kg} />
             <label> Lb: </label>
-            <input type="number" name="Lb" onChange={this.lbClick.bind(this)} value={this.state.lb} />
+            <input type="number" name="Lb" className="input" id="green" onChange={this.lbClick.bind(this)} value={this.state.lb} />
+        </div>
+    );
+  }
+}
+
+class Length extends React.Component {
+
+constructor(props) {
+    super(props);
+    this.state = { m: 0, ft: 0 };
+}
+
+mClick(e) {
+    console.log(e.target.value);
+    var newFt = (e.target.value * 3.2808).toFixed(5);
+    this.setState({ m: e.target.value, ft: newFt });
+}
+
+ftClick(e) {
+var newM = (e.target.value / 3.2808).toFixed(5);
+    this.setState({ ft: e.target.value, m: newM });
+}
+
+render() {
+
+  return (
+        <div className="length-div">
+            <label> Meters: </label>
+            <input type="number" name="m" className="input" id="blue" onChange={this.mClick.bind(this)} value={this.state.m} />
+            <label> Feet: </label>
+            <input type="number" name="ft" className="input" id="yellow" onChange={this.ftClick.bind(this)} value={this.state.ft} />
         </div>
     );
   }
