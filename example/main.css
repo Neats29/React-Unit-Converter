@@ -6,6 +6,7 @@ body {
 h1 {
 	color: #5d3ff8;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .input {
@@ -15,8 +16,7 @@ h1 {
 	border: none;
 	font-size: 1.5em;
 	color: white;
-	margin: 30px;
-	display: inline-block;
+	margin: 30px 15px;
 	padding: 8px;
 }
 
@@ -28,27 +28,30 @@ h1 {
 #red {
 	background-color: #e74c3c;
   box-shadow: 0px 5px 0px 0px #CE3323;
+	margin-left: 27px;
 }
 
 #blue {
 	background-color: #55acee;
 	box-shadow: 0px 5px 0px 0px #3C93D5;
+	 
 }
 
 #yellow {
 	background-color: #f1c40f;
   box-shadow: 0px 5px 0px 0px #D8AB00;
+	margin-left: 35px;
 }
 
 .mass-div {
-	margin: auto;
-	display: block;
+	width: 50%;
+ 	margin: 0 auto;
 }
 
 
 .length-div {
-	margin: auto;
-	display: block;
+	width: 50%;
+ 	margin: 0 auto;
 }
 
 label {

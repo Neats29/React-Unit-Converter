@@ -34,9 +34,9 @@ render() {
 
   return (
         <div className="mass-div">
-            <label> Kg: </label>
+            <label> Killos: </label>
             <input type="number" name="Kg" className="input" id="red" onChange={this.kgClick.bind(this)} value={this.state.kg} />
-            <label> Lb: </label>
+            <label> Pounds: </label>
             <input type="number" name="Lb" className="input" id="green" onChange={this.lbClick.bind(this)} value={this.state.lb} />
         </div>
     );
