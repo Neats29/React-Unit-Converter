@@ -22,24 +22,24 @@ h1 {
 
 #green {
 	background-color: #2ecc71;
-  	box-shadow: 0px 5px 0px 0px #15B358;
+  	box-shadow: 0px 7px 0px 0px #15B358;
 }
 
 #red {
 	background-color: #e74c3c;
-  box-shadow: 0px 5px 0px 0px #CE3323;
+  box-shadow: 0px 7px 0px 0px #CE3323;
 	margin-left: 27px;
 }
 
 #blue {
 	background-color: #55acee;
-	box-shadow: 0px 5px 0px 0px #3C93D5;
+	box-shadow: 0px 7px 0px 0px #3C93D5;
 	 
 }
 
 #yellow {
 	background-color: #f1c40f;
-  box-shadow: 0px 5px 0px 0px #D8AB00;
+  box-shadow: 0px 7px 0px 0px #D8AB00;
 	margin-left: 35px;
 }
 
